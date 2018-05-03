@@ -8,6 +8,10 @@ namespace TeduShop.Model.Abstracts
 {
     public interface IAuditable
     {
+        string MetaKeyword { get; set; }
+
+        string MetaDescription { get; set; }
+
         DateTime? CreatedDate { get; set; }
 
         string CreatedBy { get; set; }
@@ -16,5 +20,6 @@ namespace TeduShop.Model.Abstracts
 
         string UpdatedBy { get; set; }
 
+        bool Status { get; set; }
     }
 }
